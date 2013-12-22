@@ -13,4 +13,6 @@ describe Owner do
   it { should have_valid(:email).when(emails) }
   it { should_not have_valid(:email).when(nil) }
 
+  it { should have_many :owner_dogs }
+
 end
